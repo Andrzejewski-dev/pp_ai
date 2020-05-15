@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>JavaScript</title>
+  <style>
+		table {
+			width: 400px;
+		}
+		table thead {
+			font-weight: bold;
+		}
+		table tbody tr td {
+			border: 1px solid #ccc;
+		}
+		table tbody tr:nth-child(even) {
+			background: #eee;
+		}
+		.usun {
+			color: red;
+			cursor:pointer;
+			text-align: center;
+		}
+		.dodaj {
+			color: green;
+			cursor:pointer;
+			text-align: center;
+		}
+  </style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<td>Nr. indexu</td>
+				<td>Imię</td>
+				<td>Akcje</td>
+			</tr>
+		</thead>
+		<tbody class="collection">
+			<tr>
+				<td contenteditable="true">1</td>
+				<td contenteditable="true">Kamil</td>
+				<td><button class="usun">Usuń</button><button class="dogory">W góre</button><button class="wdol">W dół</button></td>
+			</tr>	
+			<tr>
+				<td contenteditable="true">2</td>
+				<td contenteditable="true">Kamil</td>
+				<td><button class="usun">Usuń</button><button class="dogory">W góre</button><button class="wdol">W dół</button></td>
+			</tr>	
+			<tr>
+				<td contenteditable="true">3</td>
+				<td contenteditable="true">Kamil</td>
+				<td><button class="usun">Usuń</button><button class="dogory">W góre</button><button class="wdol">W dół</button></td>
+			</tr>		
+		</tbody>
+		<tfoot>
+			<tr>
+			<td colspan="3" class="dodaj">+ Dodaj</td>
+			</tr>
+		</tfoot>
+	</table>
+	Liczba wierszy: <span class="counter"></span>
+	<br/>
+	<br/>
+	<br/>
+	Kamil Andrzejewski<br/>
+	nr. 133857<br/>
+	Semestr V grupa 1b, Studia Niestacjonarne<br/>
+	Kierunek Informatyka<br/>
+	Wydział Informatyczny
+	<script src="tabelka.js"></script> 
+</body>
+</html>
+

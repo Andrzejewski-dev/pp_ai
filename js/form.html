@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>JavaScript</title>
+  <style>
+	.danger {
+		color: red;
+	}
+	div.danger {
+		border: 2px solid red;
+		width: 250px;
+	}
+	.danger input, .danger textarea {
+		border: 2px solid red;
+	}
+	.success {
+		color: green;
+	}
+	.success input {
+		border: 2px solid green;
+	}
+	.alert {
+		display: none;
+	}
+	tr.danger:after {
+		content: "*";
+	}
+  </style>
+</head>
+<body>
+  <div class="alert danger"></div>	
+  <form name="formularz">
+	 <table>
+		<tr>
+		   <td>
+			  Imię
+		   </td>
+		   <td><input type="text" name="imie" onfocusout="validate(this);"></td>
+		</tr>
+		<tr>
+		   <td>
+			  Nazwisko
+		   </td>
+		   <td><input type="text" name="nazwisko" onfocusout="validate(this);"></td>
+		</tr>
+		<tr>
+		   <td>
+			  E-mail
+		   </td>
+		   <td><input type="email" name="email" onfocusout="validate(this);"></td>
+		</tr>
+		<tr>
+		   <td>
+			  Data urodzenia
+		   </td>
+		   <td><input type="date" name="data_urodzenia" onfocusout="validate(this);"></td>
+		</tr>
+		<tr>
+		   <td>
+			  Hasło
+		   </td>
+		   <td><input type="password" name="haslo" onfocusout="validate(this);"></td>
+		</tr>
+		<tr>
+		   <td>
+			  Powtórz hasło
+		   </td>
+		   <td><input type="password" name="haslo2" onfocusout="validate(this);"></td>
+		</tr>
+		<tr>
+		   <td>
+			  Opis
+		   </td>
+		   <td><textarea rows="5" cols="15" name="opis" onfocusout="validate(this);"></textarea></td>
+		</tr>
+		<tr>
+		   <td colspan="2"><input type="submit" value="Zarejestruj się" onclick="validateForm(this.form, event);"></td>
+		</tr>
+	 </table>
+  </form>
+	<br/>
+	<br/>
+	<br/>
+	Kamil Andrzejewski<br/>
+	nr. 133857<br/>
+	Semestr V grupa 1b, Studia Niestacjonarne<br/>
+	Kierunek Informatyka<br/>
+	Wydział Informatyczny
+   <script src="form.js"></script> 
+</body>
+</html>
+
